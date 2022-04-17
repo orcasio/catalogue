@@ -1,4 +1,6 @@
-FROM golang:1.7
+FROM golang:1.8
+
+RUN git config --global http.sslverify false
 
 RUN mkdir /app
 COPY . /go/src/github.com/microservices-demo/catalogue/
